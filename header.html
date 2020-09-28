@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">     
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Flexible Webpage</title>
+    <link rel="stylesheet" href="header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+    <script>
+        $(document).ready(function()
+        {
+            $('#slider').hide();
+            //debugger;
+            var heightsize= $(window).height();
+            var widthsize=$(window).width();
+            //alert(heightsize)
+            //alert(widthsize)
+           
+            if (widthsize < 480 )
+            {
+               
+                    $('#slider').show();                   
+
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+    <header class="fixed-top sticky-top">
+        <div class="main">
+            <div class="logo">
+                <a href="header.html"><img src="logo1.png" /></a> <!--<h1>Mahi</h1> -->
+            </div>
+            <!-- <label for="show-menu" class="show-menu"></label>
+            <input type="checkbox" id="show-menu"> -->
+            
+            <div id="slider" class="fixed-top sticky-top" style="float:right;">
+                <div class="dropdown1">
+                    <button class="dropbtn1"><div class="lines"></div></button>
+                    <div class="dropdown-content1">
+                      <a href="#hom1">Home</a>
+                      <a href="#abt">About</a>
+                      <a href="#">Services</a>
+                      <a href="#cont">Contact</a>
+                      <a href="#gal">Gallery</a>
+                    </div>
+                  </div>
+            </div>
+            <ul>
+                <li class="default"><a href="#hom1">Home</a></li>
+                <li><a href="#abt">About</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Services <i class="fa fa-caret-down"></i>
+                        <div class="dropdown-content">
+                            <a href="https://google.com" target="_blank">Google</a>
+                            <a href="https://instagram.com" target="_blank">Instagram</a>
+                            <a href="https://Facebook.com" target="_blank">Facebook</a>
+                        </div>
+                    </button>      
+                </div> 
+                <li><a href="#cont">Contact us</a></li>
+                <li><a href="#gal">Gallery</a></li>
+                
+            </ul>  
+            <!-- <div class="title">
+                    <h1>Mypage</h1>
+                </div> 
+             -->    
+        </div>
+    </header>
+    
+
+    <div id="hom1">
+        <div class="images1">
+            <img src="st2.jpg" target="_blank"/>
+            <div class="centered">
+                <h1 >Welcome to My Page!!</h1>
+                <div id="para" style="text-align:justify;">
+                    <p id="pp1">We design, develop and deliver domain specific products 
+                    and applications using Artificial Intelligence to some of the largest
+                    government and enterprise customers worldwide.
+                    All of our Products and platforms are designed ground up 
+                    with highest level of quality.</p>
+                </div>
+                <button type="button"  id="btn1" class="btn btn-outline-light">Get Started</button>
+                <br><br><br><br><br><br>
+            </div>
+        </div>   
+    </div>
+    <br>
+    <div id="abt">
+        <div class="content">
+            <h1>About us</h1>
+            <p>
+                This is  a demo page created on my knowledge to be a responsive manner.
+                used html and css fr designing it.The page consists of Home,About ,Contact,Services and gallery 
+                items. Media contains image and no javascript included in it.
+            </p>
+        </div>
+
+    </div>
+    <br>
+	<br><br>
+    <div id="cont">
+    <div class="row">
+    <div class="col-sm-4">
+        <h1>Contact us</h1>
+    </div>
+    <div class="col-sm-8" id="contform">
+        <input type="text"  class="form-control"  placeholder="Enter Your Name" ><br><br>
+        <input type="text" class="form-control"  placeholder="Enter Your Email"><br><br>
+        <input type="text" class="form-control"   placeholder="Subject" ><br><br>
+        <textarea class="form-control" placeholder="Comments" ></textarea><br><br>
+        <button type="button" class="btn btn-warning" >Send</button>
+    </div>
+   
+    </div>
+    </div>
+    <br><br>
+    <div id="gal">
+        <h1>Gallery</h1>
+        <div class="row" id="galrow">
+            <div class="col-md-4">
+                <img src="https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" target="_blank">
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.unsplash.com/photo-1501556424050-d4816356b73e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" target="_blank">
+            </div>
+            <div class="col-md-4">
+                <img src="https://images.unsplash.com/photo-1600453364898-255c24a205d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" target="_blank">
+            </div>
+        </div>
+
+    </div>
+    </div>
+</div>
+</body>
+</html>
